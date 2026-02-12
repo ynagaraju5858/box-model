@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Cards</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #cfd9ff, #e2ebff);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+
+        }
+
+
+        .container {
+            display: flex;
+            gap: 30px;
+        }
+
+
+        .card {
+            background: #f3f6ff;
+            width: 260px;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+            transition: 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+
+        .card img {
+            width: 100%;
+            height: 170px;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .card h3 {
+            margin: 15px 0 5px;
+        }
+
+
+        .price {
+            color: green;
+            font-weight: bold;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .reviews {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 15px;
+        }
+
+
+        .stars {
+            color: #f5b301;
+            margin-bottom: 5px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: linear-gradient(135deg, #4a90e2, #357ae8);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: linear-gradient(135deg, #357ae8, #2a65c7);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+
+        <div class="card">
+            <img src="./head.jpg" alt="Headphones">
+            <h3>Wireless Headphones</h3>
+            <div class="price">$99.99</div>
+            <div class="stars">★★★★★</div>
+            <div class="reviews">(1,234 reviews)</div>
+            <button class="btn"><a
+                    href="https://www.google.com/search?q=boat+wireless+headphones&sca_esv=a2c9e0ee7e7d62a7&udm=2&biw=1280&bih=585&sxsrf=ANbL-n4rrinAjXc4UiPd6sBSus0gv5tLXw%3A1770897286147&ei=hr-NafXdCNKPseMP6cqu8QU&oq=&gs_lp=Egtnd3Mtd2l6LWltZyIAKgIIAzIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAkiMIVAAWABwAXgAkAEAmAEAoAEAqgEAuAEByAEA-AEBmAIBoAILqAIKmAMLkgcBMaAHALIHALgHAMIHAzMtMcgHCIAIAA&sclient=gws-wiz-img#sv=CAMSVhoyKhBlLUpKZHJjY1UwWENQWDhNMg5KSmRyY2NVMFhDUFg4TToOWjRLenZRLVY5TGN1SE0gBCocCgZtb3NhaWMSEGUtSkpkcmNjVTBYQ1BYOE0YADABGAcg-JSiwQkwAkoIEAIYAiACKAI">🛒
+                    Add to Cart</a></button>
+        </div>
+
+        <div class="card">
+            <img src="./smartwatch.jpg" alt="Smartwatch">
+            <h3>Smartwatch</h3>
+            <div class="price">$199.99</div>
+            <div class="stars">★★★★★</div>
+            <div class="reviews">(987 reviews)</div>
+            <button class="btn"><a
+                    href="https://www.google.com/search?q=smart+watch&sca_esv=a2c9e0ee7e7d62a7&udm=2&biw=1280&bih=585&sxsrf=ANbL-n4bAXecyohiTZxqsco4ipjgwjiLnw%3A1770897929784&ei=CcKNaeTCL62iseMPltbioQE&oq=&gs_lp=Egtnd3Mtd2l6LWltZyIAKgIIAzIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAki2EFAAWABwAXgAkAEAmAEAoAEAqgEAuAEByAEA-AEBmAIBoAIKqAIKmAMKkgcBMaAHALIHALgHAMIHAzItMcgHBYAIAA&sclient=gws-wiz-img">🛒
+                    Add to Cart</a></button>
+        </div>
+
+        <div class="card">
+            <img src="./running.jpg" alt="Shoes">
+            <h3>Running Shoes</h3>
+            <div class="price">$79.99</div>
+            <div class="stars">★★★★★</div>
+            <div class="reviews">(654 reviews)</div>
+            <button class="btn"><a
+                    href="https://www.google.com/search?q=running+shoes&sca_esv=a2c9e0ee7e7d62a7&udm=2&biw=1280&bih=585&sxsrf=ANbL-n5fdNZBjCvzJ--6tqwGfbDgMH6oiA%3A1770898099273&ei=s8KNaeOwEI_gseMPxMeCgQI&oq=&gs_lp=Egtnd3Mtd2l6LWltZyIAKgIIAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAjIKECMYJxjJAhjqAki-DlAAWABwAXgAkAEAmAEAoAEAqgEAuAEByAEA-AEBmAIBoAIWqAIKmAMWkgcBMaAHALIHALgHAMIHAzQtMcgHFIAIAA&sclient=gws-wiz-img#sv=CAMSVhoyKhBlLXRNMVEtSUtPV3FNOUdNMg50TTFRLUlLT1dxTTlHTToOdG01R2FITHJER2FQaU0gBCocCgZtb3NhaWMSEGUtdE0xUS1JS09XcU05R00YADABGAcgy4zq7wswAkoIEAIYAiACKAI">🛒
+                    Add to Cart</a></button><br>
+           </div>
+
+    </div>
+
+
+</body>
+
+</html>
